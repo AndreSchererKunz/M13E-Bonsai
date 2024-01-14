@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Serif+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Bonsai Zen Market</title>    
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#head">
+    <div id="head" class="container">
+        <header id="cabecalho">
+            <nav class="navbar navbar-expand-lg pt-2">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./images/logo.jpg"> 
+                    <span>Bonsai Zen Market</span>
+                </a>
+                <form class="d-flex">
+                    <input id="pesquisa" class="form-control my-sm-0" type="search"  aria-label="Procurar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+                </form>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a id="inicio-link" class="nav-link active" href="#inicio">→Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item contato">
+                            <a class="nav-link" href="#contato">↓Contato↓</a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
+    </div>
+    <div id="inicio" class="carousel container mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="images/slide0.jpg" alt="Slide-0">
+                <div class="carousel-caption">
+                    <p>Bonsais: a arte da natureza em miniatura.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="images/slide1.jpg" alt="Slide-1">
+                <div class="carousel-caption">
+                    <p>Bonsais em crescimento, promessas de beleza.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="images/slide2.jpg" alt="Slide-2">
+                <div class="carousel-caption">
+                    <p>Adote já o seu pequeno tesouro verde.</p>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#inicio" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#inicio" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#inicio" data-bs-slide-to="0" class="active" ></button>
+            <button type="button" data-bs-target="#inicio" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#inicio" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="about" id="sobre">
+            <div class="card p-4">
+                <h2>❀Pequenas maravilhas❀</h2>
+                <div class="row">
+                    <p>Bonsais, verdadeiras joias da natureza, são mais do que meras plantas em miniatura; são expressões vivas de equilíbrio e harmonia. Em nossa loja de bonsais, convidamos você a mergulhar no fascinante mundo dessas pequenas maravilhas. Cada bonsai é uma obra de arte em crescimento, refletindo a dedicação e o cuidado necessários para moldar sua forma única. Além da estética, os bonsais oferecem uma experiência terapêutica e contemplativa. Ao cuidar dessas miniaturas vivas, você se conecta com a natureza de uma forma única, experimentando a calma e o equilíbrio que elas proporcionam.</p>
+                    <p>Ao adotar um bonsai, você não está apenas levando para casa uma planta exuberante, mas também convidando um símbolo de paciência e resiliência para fazer parte do seu cotidiano. Nossos bonsais são cultivados com paixão, resultando em árvores que emanam uma presença serena, adicionando um toque de natureza refinada ao seu espaço.</p>
+                    <p>Seja iniciando sua jornada com um bonsai jovem ou adotando um exemplar mais maduro, convidamos você a explorar nossa coleção. Descubra a magia de transformar um simples vaso em um jardim em miniatura. Adquira um bonsai e deixe a natureza florescer em sua vida cotidiana. Sua jornada com essas maravilhas vivas está prestes a começar!</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="products" id="novidades">
+            <h2>!Novidades!</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card card1">
+                        <img src="images/bonsai1-3.jpg" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Exemplar 1</h5>
+                                <p class="card-text text-center value">Valor: R$----</p>
+                                <p class="card-text text-center desc">
+                                    Espécie: X
+                                    Idade: Y
+                                </p>
+                                <button type="button" class="btn btn-product">Ver mais detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col1">
+                    <div class="card card1">
+                        <img src="images/bonsai1-2.jpg" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Exemplar 2</h5>
+                                <p class="card-text text-center value">
+                                    Valor: R$----
+                                </p>
+                                <p class="card-text text-center desc">
+                                    Espécie: X
+                                    Idade: Y
+                                </p>
+                                <button type="button" class="btn btn-product">Ver mais detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <div class="card card1">
+                        <img src="images/bonsai1-1.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Exemplar 3</h5>
+                            <p class="card-text text-center value">Valor: R$----</p>
+                            <p class="card-text text-center desc">
+                                Espécie: X
+                                Idade: Y
+                            </p>
+                            <button type="button" class="btn btn-product">Ver mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="products" id="promocoes">
+            <h2>$Promoções$</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card card2">
+                        <img src="images/bonsai2-3.jpg" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Exemplar 1</h5>
+                                <p class="card-text text-center value">Valor: R$---- por R$----</p>
+                                <p class="card-text text-center desc">
+                                    Espécie: X
+                                    Idade: Y
+                                </p>
+                                <button type="button" class="btn btn-product">Ver mais detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <div class="card card2">
+                        <img src="images/bonsai2-1.jpg" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Exemplar 2</h5>
+                                <p class="card-text text-center value">Valor: R$---- por R$----</p>
+                                <p class="card-text text-center desc">
+                                    Espécie: X
+                                    Idade: Y
+                                </p>
+                                <button type="button" class="btn btn-product">Ver mais detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <div class="card card2">
+                        <img src="images/bonsai2-2.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Exemplar 3</h5>
+                            <p class="card-text text-center value">Valor: R$---- por R$----</p>
+                            <p class="card-text text-center desc">
+                                Espécie: X
+                                Idade: Y
+                            </p>
+                            <button type="button" class="btn btn-product">Ver mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contato">
+        <footer>
+            Desenvolvido por <a href="https://github.com/AndreSchererKunz" target="_blank">A.S.K.</a> | © 2024
+        </footer>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        function resetSearchField() {
+            document.getElementById('pesquisa').value = '';
+        }
+    </script>
+</body>
+
+</html>
